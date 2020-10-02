@@ -25,4 +25,14 @@ public class StudentApi {
     public Student create(@RequestBody Student student) {
         return studentBl.createStudent(student);
     }
+
+//    @RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
+//    public String get() {
+//        return studentBl.findAllStudents().toString();
+//    }
+
+    @RequestMapping(method = RequestMethod.GET, produces = MediaType.TEXT_PLAIN_VALUE)
+    public String findStudent() {
+        return studentBl.findStudentByPk(11).toString();
+    }
 }
