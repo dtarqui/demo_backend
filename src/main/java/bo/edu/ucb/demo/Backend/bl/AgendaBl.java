@@ -10,7 +10,7 @@ import java.util.Optional;
 @Service
 public class AgendaBl {
 
-    private ContactRepository contactRepository;
+    private final ContactRepository contactRepository;
 
     @Autowired
     public AgendaBl(ContactRepository cr) {

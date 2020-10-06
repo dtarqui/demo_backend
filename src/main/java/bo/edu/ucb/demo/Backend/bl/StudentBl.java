@@ -41,7 +41,7 @@ public class StudentBl {
         }
     }
 
-    public Student findAllStudents() {
+    public String findAllStudents() {
 //        Optional<Student> result = studentRepository.findById(studentId);
 //        if (result.isPresent()) {
 //            return result.get();
@@ -55,7 +55,7 @@ public class StudentBl {
                     student.setFullName(resultSet.getString(2));
                     return student;
                 });
-        return (Student) result.get(0);
+        return  result.toString();
 
     }
 
