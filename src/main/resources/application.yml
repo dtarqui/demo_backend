@@ -12,3 +12,7 @@ spring:
       connectionTestQuery: select 1
       maximum-pool-size: 2
       connection-timeout: 60000
+
+#    url: jdbc:mysql://b14713d38c031c:8f2ee113@us-cdbr-east-03.cleardb.com/heroku_a42b971124ca32e?reconnect=true
+#    username: b14713d38c031c
+#    password: 8f2ee113
